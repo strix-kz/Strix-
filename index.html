@@ -974,7 +974,7 @@ async function doRegister(){
 async function doGoogle(){
   const {error}=await sb.auth.signInWithOAuth({
     provider:'google',
-    options:{redirectTo:window.location.href}
+    options:{redirectTo:'https://str1x.netlify.app'}
   });
   if(error)showErr(error.message);
 }
